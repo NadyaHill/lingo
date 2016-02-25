@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="Lingo">
+<head>
+	<title>Translate Away You fart!</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script>
+	<script type = "text/javascript" src="/js/lingo.js"></script>
+	<script type = "text/javascript" src="/js/lingoController.js"></script>
+</head>
+
+<body ng-controller="lingoController">
+
+
+	<form ng-submit="translationizing(newTranslate)">
+		<input ng-model="newTranslate.translateFrom" type="text" placeholder="Language you speak">
+		<input ng-model="newTranslate.translateTo" type="text" placeholder="Language you would like to speak">
+		<input ng-model="newTranslate.translation" type="text" placeholder="translation">
+		<input type="submit">
+	</form>
+
+	<h1>{{translatedWord}}</h1>
+
+
+</body>
+<html>

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html ng-app="Lingo">
 <head>
-	<title>Translate Away You fart!</title>
+	<title>Tranzlatify!</title>
+	<link href='https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script>
 	<script type = "text/javascript" src="/js/lingo.js"></script>
 	<script type = "text/javascript" src="/js/lingoController.js"></script>
+    <link rel="stylesheet" href="/stylesheets/main.css"></link>
 </head>
 
 <body ng-controller="lingoController">
-
 
 	<form ng-submit="translationizing(newTranslate)">
 		<input ng-model="newTranslate.translateFrom" type="text" placeholder="Language you speak">
@@ -17,7 +18,7 @@
 		<input type="submit">
 	</form>
 
-	<h1>{{translatedWord}}</h1>
+	<h1 class="translatedWord">{{translatedWord}}</h1>
 
 
 </body>

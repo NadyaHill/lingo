@@ -1,0 +1,15 @@
+* {
+	font-family: "Sue Ellen Francisco";
+	background-color: cornsilk;
+	font-size: 25px;
+	border-radius: 10px;
+	position: relative;
+}
+
+.translatedWord{
+	font-size: 50px;
+}
+
+ul {
+	list-style-type: none
+}

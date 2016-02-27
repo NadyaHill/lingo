@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="Lingo">
+<head>
+	<title>Quizify!</title>
+	<link href='https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script>
+	<script type = "text/javascript" src="/js/lingo.js"></script>
+	<script type = "text/javascript" src="/js/lingoController.js"></script>
+    <link rel="stylesheet" href="/stylesheets/main.css"></link>
+</head>
+
+<body ng-controller="lingoController">
+
+ 		<form ng-submit="quiz(newQuiz)">
+			<input ng-model="newQuiz.from" type="text" placeholder="new language"></br>
+			<input ng-model="newQuiz.to" type="text" placeholder="mother tongue"></br>
+			<input type="submit">
+		</form>
+
+
+		<ul>
+			<li ng-repeat="item in quizList"> {{item}} </br>
+<!-- 		<input type="text" placeholder="mother tongue"> -->	
+			</li>
+		</ul>
+<!-- 		<input type = "submit"> -->
+
+		<form ng-submit="quizSubmit(newAnswer)">
+			<input type="text" placeholder="mother tongue" ng-model="newAnswer.one"></br>
+			<input type="text" placeholder="mother tongue" ng-model="newAnswer.two"></br>
+			<input type="text" placeholder="mother tongue" ng-model="newAnswer.three"></br>
+			<input type="text" placeholder="mother tongue" ng-model="newAnswer.four"></br>
+			<input type="text" placeholder="mother tongue" ng-model="newAnswer.five"></br>
+			<input type="text" placeholder="mother tongue" ng-model="newAnswer.six"></br>
+			<input type="text" placeholder="mother tongue" ng-model="newAnswer.seven"></br>
+			<input type="text" placeholder="mother tongue" ng-model="newAnswer.eight"></br>
+			<input type="text" placeholder="mother tongue" ng-model="newAnswer.nine"></br>
+			<input type="text" placeholder="mother tongue" ng-model="newAnswer.ten"></br>
+			<input type="submit">
+		</form>
+
+		<ul>
+			<li ng-repeat="answer in quizAnswers"> {{answer}} </br>
+<!-- 		<input type="text" placeholder="mother tongue"> -->	
+			</li>
+		</ul>
+
+	
+
+
+
+
+</body>
+</html>
